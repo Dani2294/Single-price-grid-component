@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* Margin & padding classes */
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #2ab2af;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e5eff5;
+  background-color: #c0df34;
+  border-radius: 5px;
+  margin-top: 2rem;
+  box-shadow: 0 5px 15px 5px rgba(119, 119, 119, 0.3);
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-box {
+  border-radius: 10px;
+  box-shadow: 0 15px 40px 10px rgba(153, 153, 153, 0.3);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.card-box .inner-box {
+  display: flex;
+}
+
+.card-box .community-guarantee {
+  color: #c0df34;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-box .community-desc {
+  color: #98a6bd;
+  font-size: 1.4rem;
+}
+
+.card-box .subscription {
+  width: 50%;
+  background-color: #2ab2af;
+  border-radius: 0 0 0 10px;
+}
+
+.card-box .subscription span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 1rem;
+  position: relative;
+  top: 5px;
+}
+
+.card-box .subscription p:first-of-type {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.4rem;
+  top: 100px;
+}
+
+.card-box .subscription .subscription-desc {
+  font-size: 1.3rem;
+  color: #e5eff5;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.card-box .why-us {
+  width: 50%;
+  background-color: #2cbab8;
+  border-radius: 0 0 10px 0;
+}
+
+.card-box .why-us .why-us-desc {
+  color: #e5eff5;
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 580px) {
+  .card-box {
+    max-height: 100%;
+    max-width: 350px;
+    margin-bottom: 18rem;
+  }
+  .card-box .community {
+    padding: 3rem;
+  }
+  .card-box .community h2 {
+    font-size: 2rem;
+  }
+  .card-box .community .community-guarantee {
+    margin-bottom: 2rem;
+  }
+  .card-box .inner-box {
+    display: block;
+  }
+  .card-box .inner-box .subscription {
+    width: 100%;
+    border-radius: 0;
+    padding: 3rem;
+  }
+  .card-box .inner-box .why-us {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 3rem;
+  }
+}

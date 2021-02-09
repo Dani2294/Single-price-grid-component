@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: $light-gray;
+  background-color: $bright-yellow-color;
+  border-radius: 5px;
+  margin-top: 2rem;
+  box-shadow: 0 5px 15px 5px rgba($color: #777, $alpha: 0.3);
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}

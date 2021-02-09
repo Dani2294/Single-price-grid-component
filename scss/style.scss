@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+@import "config";
+@import "utilities";
+@import "buttons";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-box {
+  border-radius: 10px;
+  box-shadow: 0 15px 40px 10px rgba($color: #999, $alpha: 0.3);
+  max-width: 750px;
+  margin: 0 auto;
+
+  .inner-box {
+    display: flex;
+  }
+
+  .community-guarantee {
+    color: $bright-yellow-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .community-desc {
+    color: $grayish-blue;
+    font-size: 1.4rem;
+  }
+
+  .subscription {
+    width: 50%;
+    background-color: $cyan-color;
+    border-radius: 0 0 0 10px;
+
+    span {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-right: 1rem;
+      position: relative;
+      top: 5px;
+    }
+
+    p:first-of-type {
+      color: rgba($color: #fff, $alpha: 0.4);
+      font-size: 1.4rem;
+      top: 100px;
+    }
+
+    .subscription-desc {
+      font-size: 1.3rem;
+      color: $light-gray;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+  }
+
+  .why-us {
+    width: 50%;
+    background-color: $light-cyan-color;
+    border-radius: 0 0 10px 0;
+
+    .why-us-desc {
+      color: $light-gray;
+      font-size: 1.3rem;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .card-box {
+    max-height: 100%;
+    max-width: 350px;
+    margin-bottom: 18rem;
+
+    .community {
+      padding: 3rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .community-guarantee {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .inner-box {
+      display: block;
+
+      .subscription {
+        width: 100%;
+        border-radius: 0;
+        padding: 3rem;
+      }
+
+      .why-us {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        padding: 3rem;
+      }
+    }
+  }
+}
